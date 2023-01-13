@@ -27,13 +27,13 @@ C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Controller\CEd
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Controller\CHys.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Entity\hys.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Service\SExperiencia.java
-C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Interface\IPersonaService.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\LfbApplication.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Repository\Rhys.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Security\Entity\Usuario.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Security\Controller\Mensaje.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Security\jwt\JwtProvider.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Controller\CExperiencia.java
+C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Dto\dtoPersona.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Repository\RExperiencia.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Security\jwt\JwtTokenFilter.java
 C:\felipe\BackEnd-AP\BackEnd-AP\src\main\java\com\LFBalmaceda\lfb\Entity\Persona.java

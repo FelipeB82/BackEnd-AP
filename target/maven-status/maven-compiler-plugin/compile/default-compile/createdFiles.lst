@@ -11,9 +11,9 @@ com\LFBalmaceda\lfb\Controller\CEducacion.class
 com\LFBalmaceda\lfb\Service\ImpPersonaService.class
 com\LFBalmaceda\lfb\Security\MainSecurity.class
 com\LFBalmaceda\lfb\Entity\Educacion.class
+com\LFBalmaceda\lfb\Dto\dtoPersona.class
 com\LFBalmaceda\lfb\Security\Service\RolService.class
 com\LFBalmaceda\lfb\Entity\hys.class
-com\LFBalmaceda\lfb\Interface\IPersonaService.class
 com\LFBalmaceda\lfb\Dto\dtoEducacion.class
 com\LFBalmaceda\lfb\Service\Shys.class
 com\LFBalmaceda\lfb\Security\Repository\iUsuarioRepository.class
