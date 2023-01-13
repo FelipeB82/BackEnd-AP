@@ -29,6 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "https://frontend-ap-24d65.web.app/")
+//@CrossOrigin(origins = "https://localhost:4200/")
 @RequestMapping("/skill")
 public class CHys {
 
@@ -78,16 +79,16 @@ public class CHys {
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoHys dtohys) {
         //Validamos si existe el ID
         if (!shys.existsById(id)) {
-            return new ResponseEntity<>(new Mensaje("El ID no existe"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(new Mensaje("ID no existe"), HttpStatus.BAD_REQUEST);
         }
         //Compara nombre de skills
         if (shys.existsByNombre(dtohys.getNombre()) && shys.getByNombre(dtohys.getNombre()).get()
                 .getId() != id) {
-            return new ResponseEntity<>(new Mensaje("Esa skill ya existe"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(new Mensaje("Skill ya existente"), HttpStatus.BAD_REQUEST);
         }
         //No puede estar vacio
         if (StringUtils.isBlank(dtohys.getNombre())) {
-            return new ResponseEntity<>(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(new Mensaje("Nombre de skill obligatorio"), HttpStatus.BAD_REQUEST);
         }
 
         hys hYs = shys.getOne(id).get();
