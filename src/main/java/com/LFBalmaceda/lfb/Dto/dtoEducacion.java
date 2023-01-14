@@ -6,10 +6,6 @@ package com.LFBalmaceda.lfb.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-/**
- *
- * @author 54381
- */
 public class dtoEducacion {
     @NotBlank
     private String nombreE;

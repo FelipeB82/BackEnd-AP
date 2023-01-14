@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.LFBalmaceda.lfb.Controller;
-
 /**
  *
  * @author 54381
  */
+package com.LFBalmaceda.lfb.Controller;
+
 import com.LFBalmaceda.lfb.Dto.dtoEducacion;
 import com.LFBalmaceda.lfb.Entity.Educacion;
 import com.LFBalmaceda.lfb.Security.Controller.Mensaje;
@@ -29,8 +29,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "http://localhost:4200")
-//@CrossOrigin(origins = "https://frontend-ap-24d65.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontend-ap-24d65.web.app")
 public class CEducacion {
     @Autowired
     Seducacion sEducacion;
@@ -61,22 +61,18 @@ public class CEducacion {
     
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoEducacion dtoeducacion){
-        if(StringUtils.isBlank(dtoeducacion.getNombreE())){
+        if(StringUtils.isBlank(dtoeducacion.getNombreE()))
             return new ResponseEntity<>(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
-        }
-        if(sEducacion.existsByNombreE(dtoeducacion.getNombreE())){
+        if(sEducacion.existsByNombreE(dtoeducacion.getNombreE()))
             return new ResponseEntity<>(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
-        }
-        
-        Educacion educacion = new Educacion(
-                dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE()
-            );
+                
+        Educacion educacion = new Educacion(dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE());
         sEducacion.save(educacion);
         return new ResponseEntity<>(new Mensaje("Educacion creada"), HttpStatus.OK);
                 
     }
     
-    @PutMapping("/update/{id}")
+     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoEducacion dtoeducacion){
         if(!sEducacion.existsById(id)){
             return new ResponseEntity<>(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);

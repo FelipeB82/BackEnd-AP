@@ -9,8 +9,9 @@ package com.LFBalmaceda.lfb.Security.Controller;
  * @author Felipe
  */
 public class Mensaje {
-     private String mensaje;
+    private String mensaje;
     
+    //Constructor
 
     public Mensaje() {
     }
@@ -18,6 +19,7 @@ public class Mensaje {
     public Mensaje(String mensaje) {
         this.mensaje = mensaje;
     }
+    //Getter y Setter
 
     public String getMensaje() {
         return mensaje;
