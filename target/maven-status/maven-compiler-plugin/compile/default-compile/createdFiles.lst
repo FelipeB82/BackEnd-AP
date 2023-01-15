@@ -1,7 +1,10 @@
 com\LFBalmaceda\lfb\Security\Entity\Rol.class
+com\LFBalmaceda\lfb\Controller\CProyecto.class
 com\LFBalmaceda\lfb\Security\jwt\JwtEntryPoint.class
 com\LFBalmaceda\lfb\Service\Seducacion.class
+com\LFBalmaceda\lfb\Repository\RProyecto.class
 com\LFBalmaceda\lfb\Security\Entity\UsuarioPrincipal.class
+com\LFBalmaceda\lfb\Entity\Proyecto.class
 com\LFBalmaceda\lfb\Security\Dto\JwtDto.class
 com\LFBalmaceda\lfb\LfbApplication.class
 com\LFBalmaceda\lfb\Entity\Persona.class
@@ -12,6 +15,7 @@ com\LFBalmaceda\lfb\Service\ImpPersonaService.class
 com\LFBalmaceda\lfb\Security\MainSecurity.class
 com\LFBalmaceda\lfb\Entity\Educacion.class
 com\LFBalmaceda\lfb\Dto\dtoPersona.class
+com\LFBalmaceda\lfb\Dto\dtoProyecto.class
 com\LFBalmaceda\lfb\Security\Service\RolService.class
 com\LFBalmaceda\lfb\Entity\hys.class
 com\LFBalmaceda\lfb\Dto\dtoEducacion.class
@@ -27,6 +31,7 @@ com\LFBalmaceda\lfb\Security\Repository\iRolRepository.class
 com\LFBalmaceda\lfb\Repository\RExperiencia.class
 com\LFBalmaceda\lfb\Repository\IPersonaRepository.class
 com\LFBalmaceda\lfb\Security\jwt\JwtProvider.class
+com\LFBalmaceda\lfb\Service\SProyecto.class
 com\LFBalmaceda\lfb\Security\Controller\Mensaje.class
 com\LFBalmaceda\lfb\Service\SExperiencia.class
 com\LFBalmaceda\lfb\Security\Controller\AuthController.class
