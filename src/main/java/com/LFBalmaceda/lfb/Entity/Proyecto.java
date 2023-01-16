@@ -25,23 +25,23 @@ public class Proyecto {
     private String nombre;
     @NotNull
     private String descripcion;
-    private String img;
+    private String imgpro;
     private String url_imagen;
     
     //constructor
 
     public Proyecto() {
     }
-    
-    
-    public Proyecto (String nombre, String descripcion, String img, String url_imagen){
+
+    public Proyecto(String nombre, String descripcion, String imgpro, String url_imagen) {
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.img = img;
+        this.imgpro = imgpro;
         this.url_imagen = url_imagen;
     }
+
     
-    //getter y Setters
+    //Getter y Setters
 
     public int getId() {
         return id;
@@ -49,6 +49,14 @@ public class Proyecto {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getDescripcion() {
@@ -59,12 +67,12 @@ public class Proyecto {
         this.descripcion = descripcion;
     }
 
-    public String getImg() {
-        return img;
+    public String getImgpro() {
+        return imgpro;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setImgpro(String imgpro) {
+        this.imgpro = imgpro;
     }
 
     public String getUrl_imagen() {
@@ -74,13 +82,5 @@ public class Proyecto {
     public void setUrl_imagen(String url_imagen) {
         this.url_imagen = url_imagen;
     }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-   
+      
 }

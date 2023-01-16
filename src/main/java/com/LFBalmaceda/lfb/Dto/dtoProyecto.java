@@ -11,30 +11,29 @@ package com.LFBalmaceda.lfb.Dto;
 import javax.validation.constraints.NotBlank;
 
 
-public class dtoProyecto {
+ public class dtoProyecto {
     @NotBlank
     private String nombre;
     @NotBlank
     private String descripcion;
     @NotBlank
-    private String img;
+    private String imgpro;
     @NotBlank
     private String url_imagen;
     
     //Constructor
-    
+
     public dtoProyecto() {
     }
 
-    public dtoProyecto(String nombre, String descripcion, String img, String url_imagen) {
+    public dtoProyecto(String nombre, String descripcion, String imgpro, String url_imagen) {
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.img = img;
+        this.imgpro = imgpro;
         this.url_imagen = url_imagen;
     }
-
     
-    //Getter y Setter
+    //Getter y setter
 
     public String getNombre() {
         return nombre;
@@ -52,12 +51,12 @@ public class dtoProyecto {
         this.descripcion = descripcion;
     }
 
-    public String getImg() {
-        return img;
+    public String getImgpro() {
+        return imgpro;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setImgpro(String imgpro) {
+        this.imgpro = imgpro;
     }
 
     public String getUrl_imagen() {
@@ -67,6 +66,8 @@ public class dtoProyecto {
     public void setUrl_imagen(String url_imagen) {
         this.url_imagen = url_imagen;
     }
+    
+    
             
    
             
